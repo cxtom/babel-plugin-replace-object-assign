@@ -1,0 +1,31 @@
+{
+  "name": "babel-plugin-replace-object-assign",
+  "version": "0.0.1",
+  "description": "Allows you to replace Object.assign with simple polyfill",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cxtom/babel-plugin-replace-object-assign"
+  },
+  "author": "cxtom <cxtom2008@gmail.com> (https://github.com/cxtom)",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "istanbul test _mocha",
+    "prebuild": "rm -rf lib/",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "assign",
+    "babel",
+    "babel-plugin"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "simple-assign": "0.1.0"
+  }
+}
