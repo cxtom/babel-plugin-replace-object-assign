@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-replace-object-assign",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Allows you to replace Object.assign with simple polyfill",
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
     "simple-assign": "0.1.0"
+  },
+  "dependencies": {
+    "babel-template": "^6.26.0"
   }
 }
